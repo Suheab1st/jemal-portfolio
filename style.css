@@ -721,3 +721,50 @@ footer {
     flex-direction: column;
   }
 }
+
+/* Zuro project screenshot gallery */
+.zuro-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 10px;
+  padding: 35px 15px 15px;
+  background: linear-gradient(145deg, #101b16, #080d0b);
+}
+
+.zuro-gallery .visual-label {
+  z-index: 2;
+}
+
+.zuro-gallery img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 9px;
+  background: #080d0b;
+  border: 1px solid rgba(181,239,69,.2);
+  transition: transform .3s, border-color .3s;
+}
+
+.zuro-gallery img:hover {
+  transform: translateY(-5px);
+  border-color: #b5ef45;
+}
+
+@media (max-width: 800px) {
+  .zuro-gallery {
+    min-height: 280px;
+    padding-top: 45px;
+  }
+
+  .zuro-gallery img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 550px) {
+  .zuro-gallery img {
+    height: 145px;
+  }
+}
