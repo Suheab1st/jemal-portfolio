@@ -1,0 +1,1 @@
+Zuro application project screenshots.
